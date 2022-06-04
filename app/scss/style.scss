@@ -1,0 +1,126 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background-color: gray;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+.section {
+  margin-top: 164px;
+}
+.title {
+  font-size: 45.0633px;
+  line-height: 52px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 24px;
+}
+
+.logo {
+  &__link {
+  }
+  &__img {
+    width: 50px;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__item {
+    padding-right: 28px;
+  }
+  &__item:last-child {
+    padding-right: 0px;
+  }
+  &__link {
+    font-size: 24.87px;
+    line-height: 28.45px;
+    color: #000;
+  }
+}
+.offer {
+  height: 100%;
+  min-height: 682px;
+  &__inner {
+    position: relative;
+    margin-top: 63px;
+  }
+  &__title {
+    max-width: 810px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 69px;
+    line-height: 78.94px;
+    padding-top: 82px;
+    padding-left: 27px;
+    color: #282828;
+    span {
+      border-bottom: 3.5px solid #282828;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 26px;
+    top: 0px;
+  }
+}
+
+.foods {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  &__item {
+    background-color: gray;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__img-box {
+    padding: 10px;
+
+  }
+  &__img {
+  }
+  &__order-btn {
+    width: 100%;
+    background-color: gray;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #282828;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    &:active{
+      background-color: rgb(110, 110, 110);
+    }
+    
+  }
+}
+
+.footer {
+  background-color: gray;
+
+  &__inner {
+    padding: 20px 0;
+  }
+}
+
