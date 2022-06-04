@@ -79,6 +79,7 @@
 }
 
 .foods {
+  margin-bottom: 100px;
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -93,34 +94,69 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+
+    position: relative;
   }
   &__img-box {
     padding: 10px;
-
   }
   &__img {
   }
   &__order-btn {
-    width: 100%;
+    width: 30px;
+    height: 30px;
     background-color: gray;
-    padding: 5px;
+    padding: 2px;
     color: #fff;
-    border: 1px solid #282828;
+    border: 1px solid #fff;
     font-size: 20px;
     line-height: 22px;
     font-weight: 700;
-    &:active{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    &:active {
       background-color: rgb(110, 110, 110);
     }
-    
   }
 }
-
+.primary-btn {
+  background-color: rgb(168, 168, 168);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.cart-btn {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 90%;
   background-color: gray;
+  // margin: 0 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   &__inner {
-    padding: 20px 0;
+    padding: 15px 10px 10px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
   }
 }
-
